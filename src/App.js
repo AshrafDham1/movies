@@ -3,6 +3,7 @@ import Header from './components/header';
 import MoviesGrid from './pages/moviesGrid';
 import Movie from './pages/movie';
 import Cast from './pages/cast';
+import Actor from './pages/Actor';
 import { StateContext } from './context/context'
 import { useContext, useEffect } from 'react';
 import { BrowserRouter , Routes } from 'react-router-dom';
@@ -36,6 +37,7 @@ function App() {
           <Route path='/' element={<MoviesGrid />} />
           <Route path='/movie/:id' element={<Movie />} />
           <Route path="/cast/:id/:title" element={<Cast />} />
+          <Route path="/actor/:id" element={<Actor />} />
 
         </Routes>
 

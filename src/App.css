@@ -226,3 +226,101 @@ header {
 .title{
   margin: 3rem;
 }
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 2rem;
+}
+.backIMG{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.backIMG:hover{
+  transform: scale(1.1);
+}
+
+.profile-detail {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+.backdrop {
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin: 50px auto !important;
+}
+
+@media(min-width: 768px) {
+  .content {
+    flex-direction: row;
+  }
+}
+
+.profile-picture {
+  border-radius: 10px;
+  margin: 0 auto 20px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media(min-width: 768px) {
+  .profile-picture {
+    margin: 0 20px 0 0;
+  }
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  margin-top: 0;
+  font-size: 2.5em;
+}
+
+.profile-info h2 {
+  font-size: 1.5em;
+  color: #ccc;
+}
+
+.profile-info p {
+  margin: 10px 0;
+}
+
+.details {
+  color: greenyellow;
+}
+
+.actorBack{
+  margin-left: 25px;
+}
+
+.links{
+  text-decoration: none;
+}
