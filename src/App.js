@@ -3,11 +3,11 @@ import Header from './components/header';
 import MoviesGrid from './pages/moviesGrid';
 import Movie from './pages/movie';
 import Cast from './pages/cast';
-import Actor from './pages/Actor';
+import Actor from './pages/actor';
 import { StateContext } from './context/context'
 import { useContext, useEffect } from 'react';
 import { BrowserRouter , Routes } from 'react-router-dom';
-import { Route, Switch } from "react-router";
+import { Route } from "react-router";
 
 function App() {
   const [state, dispatch] = useContext(StateContext)
@@ -18,7 +18,7 @@ function App() {
       .then(data => {
         // this.displayMovies(data.results);
         dispatch({ type: "SET_MOVIES", payload: data.results })
-        // console.log(state)
+        console.log(state)
         // console.log(data.results)
 
 
